@@ -100,6 +100,21 @@
   text-shadow: 0 0 10px rgba(255, 211, 105, 0.8);
 }
 
+.left-nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 26px;
+  /* visibility: hidden; */
+}
+
+.option{
+  visibility: hidden;
+}
+
+
+
+
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .right-nav {
@@ -129,6 +144,10 @@
     width: 160px;
     font-size: 13px;
     padding: 6px 12px;
+  }
+
+  .option{
+    visibility: visible;
   }
 }
 

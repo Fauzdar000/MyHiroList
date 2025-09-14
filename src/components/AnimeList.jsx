@@ -16,6 +16,9 @@ const AnimeList = () => {
   const [selectedAnime, setSelectedAnime] = useState(null); 
   const [visibleCount , setVisibleCount] = useState(15);
 
+
+  const [shwoTopAnime , setShowTopAnime] = useState(true);
+
   useEffect(() => {
     setloading(true);
     axios.get('https://api.jikan.moe/v4/top/anime')
@@ -40,7 +43,11 @@ const AnimeList = () => {
 
   return (
     <>
-      <Navbar search={search} setsearch={setsearch} />
+      <Navbar search={search} setsearch={setsearch} 
+
+      
+      
+      />
       
       <Slider />
 

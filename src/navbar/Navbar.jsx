@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 import React from "react";
 
-const Navbar =React.memo(({search , setsearch }) => {
+const Navbar =React.memo(({search , setsearch, }) => {
   return (
     <div className="navbar">
       <div className="right-nav">
@@ -32,6 +32,10 @@ const Navbar =React.memo(({search , setsearch }) => {
 
 
       <div className="left-nav">
+        <div className="option">
+        <i class="bi bi-three-dots-vertical"></i>
+
+        </div>
         <div className="login">
           <i className="bi bi-person"></i>
         </div>
