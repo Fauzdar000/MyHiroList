@@ -1,0 +1,29 @@
+.Footer-body {
+  background: #0a0f24;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px; /* ensures space above */
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.4);
+}
+
+/* Social icons */
+.FooterIcone-icone {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+
+}
+
+.FooterIcone-icone img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+  color: #fff;
+
+}
+
+.FooterIcone-icone img:hover {
+  transform: scale(1.2);
+}

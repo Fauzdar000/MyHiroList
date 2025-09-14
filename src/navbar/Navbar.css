@@ -1,0 +1,151 @@
+/* ===== Navbar Container ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #0a0f24, #1b2947); /* dark anime blue */
+  padding: 12px;
+  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+  position: fixed; 
+  top: 0px;        
+  left: 0px;
+  width: 100%;
+  
+  z-index: 100;     
+  height: 60px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  border-radius: 0;
+}
+
+/* Add subtle hover effect to whole navbar */
+.navbar:hover {
+  background: linear-gradient(135deg, #111a3c, #22335e);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Right Side (Logo + Search) ===== */
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f6f8fc;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgba(79, 163, 255, 0.9);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo i {
+  font-size: 24px;
+}
+
+.logo h2 {
+  font-size: 22px;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* Search Box */
+.search input {
+  background: #141c30;
+  border: 2px solid #4fa3ff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+  width: 260px;
+  transition: all 0.3s ease;
+}
+
+.search input::placeholder {
+  color: #9da6c1;
+  font-size: 13px;
+}
+
+.search input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 10px #4fa3ff;
+  background: #1c2645;
+}
+
+/* ===== Left Side (Login/Profile) ===== */
+
+
+.login {
+  color: #ffd369;
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: transform 0.25s ease, color 0.3s ease;
+}
+
+.login:hover {
+  transform: scale(1.25);
+  color: #ffe28c;
+  text-shadow: 0 0 10px rgba(255, 211, 105, 0.8);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .right-nav {
+    gap: 30px;
+  }
+
+  .search input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    height: 55px;
+  }
+
+  .right-nav {
+    gap: 20px;
+  }
+
+  .logo h2 {
+    font-size: 18px;
+  }
+
+  .search input {
+    width: 160px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .right-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+}

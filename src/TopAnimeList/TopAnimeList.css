@@ -1,0 +1,45 @@
+/* Container */
+.anime-table {
+  display: flex;                    /* flex instead of table-row */
+  align-items: center;
+  gap: 10px;                        /* space between image and info */
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease;
+ background: linear-gradient(135deg, #0a0f24, #1b2947);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.anime-table:hover {
+   transform: scale(1.05);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.7);
+}
+
+/* Image container */
+.anime-img img {
+  width: 60px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* Info container */
+.anime-info {
+  display: flex;
+  flex-direction: column;           /* stack rank, score, title vertically */
+  justify-content: center;
+}
+
+.anime-info p {
+  font-size: 12px;
+  color: #ccc;
+  margin: 2px 0;
+}
+
+.anime-info h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 4px 0 0 0;
+}
